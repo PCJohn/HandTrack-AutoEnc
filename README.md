@@ -1,7 +1,7 @@
 # HandTrack-AutoEnc
 Hand tracking with autoencoders
 
-This is a module for hand tracking in video using autoencoders. This was a
+This is a module for hand tracking in video using autoencoders.
 
 **Requirements**
 
@@ -51,8 +51,7 @@ For the pretrained models, I have used only the raw images along with their hori
 
 **Training a new model**
 
-As this was mainly a quick exercise in training autoencoders and seeing its effectiveness for tracking without preprocessing. The pretrained models may not be the most general, 
-To train a new model, run:
+As this was mainly a quick exercise in training autoencoders and seeing its effectiveness for tracking without preprocessing, the pretrained models may not be the most general. To train a new model, run:
 
     python auto.py
 
