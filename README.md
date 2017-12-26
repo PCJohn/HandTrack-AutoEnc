@@ -10,7 +10,7 @@ This module was initialy written in these versions:
     Python 2.7
     OpenCV version 2
 
-Most of the image loading/processing for training the model should also work in OpenCV version 3 (I've not tested this). However, the script to run the demo (`htrack.py`) will need some changes, particularly in the parts where the video output is save to file.
+Most of the image loading/processing for training the model should also work in OpenCV version 3 (I've not tested this). However, the script to run the demo will need some changes, particularly in the parts where the video output is save to file.
 
 **Usage**
 
@@ -41,7 +41,7 @@ The script hds.py can be used to load the dataset:
 
 This is used in line 52, 53 in `auto.py`.
 
-For the pretrained models, I have used the raw images along with their horizontal mirror image. The script contains parameters which allow inflating the dataset with other operations. To use these while loading the dataset, set the parameters in lines 20-31 in `hds.py`:
+For the pretrained models, I have used only the raw images along with their horizontal mirror image. The script contains parameters which allow inflating the dataset with other operations. To use these while loading the dataset, set the parameters in lines 20-31 in `hds.py`:
 
     (1) Vertical mirror image (set H_FLIP = True)
     (2) Horizontal mirror image (set V_FLIP = True)
@@ -51,12 +51,12 @@ For the pretrained models, I have used the raw images along with their horizonta
 
 **Training a new model**
 
-As this was mainly a quick exercise in training autoencoders and seeing its effectiveness for tracking without preprocessing. The pretrained models 
+As this was mainly a quick exercise in training autoencoders and seeing its effectiveness for tracking without preprocessing. The pretrained models may not be the most general, 
 To train a new model, run:
 
     python auto.py
 
-This will load the dataset, train the model and 
+This will load the dataset, train the model and save it in `auto.h5`.
 
 **Notes on training** <Write this bit>
 
