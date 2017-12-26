@@ -1,7 +1,6 @@
 # HandTrack-AutoEnc
-Hand tracking with autoencoders
 
-This is a module for hand tracking in video using autoencoders.
+This is a module for hand tracking in video using autoencoders (demo: https://youtu.be/bpal9eTJZb8)
 
 **Requirements**
 
@@ -69,7 +68,3 @@ This will load the dataset, train the model and save it in `auto.h5`.
 (2) Trimming the model: I am pretty sure the model size can be reduced (though training would take longer). Overall, it is a standard autoencoder. The only thing to ensure is that max pooling layers are not used in the encoder (I've used strided convolutions instead).
 
 (3) Normalization: I have not used any normalization while training. Code to normalize an image can be added in line 45 in `hds.py`.
-
-**Demo**
-
-A demo of the black and white model can be seen here: https://youtu.be/bpal9eTJZb8
