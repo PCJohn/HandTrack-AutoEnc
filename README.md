@@ -72,4 +72,4 @@ This will load the dataset, train the model and save it in `auto.h5`.
 
 **Demo**
 
-A demo of the black and white model can be seen here: https://youtu.be/BrmC-h-ymPo
+A demo of the black and white model can be seen here: https://youtu.be/bpal9eTJZb8
