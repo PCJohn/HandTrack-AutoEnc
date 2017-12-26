@@ -10,9 +10,13 @@ import numpy as np
 import scipy.io as sio
 
 #Size of the images for training
-SIZE = (192,192)
+SIZE = (224,224)
 #Use color or black and white images
 COL = False
+
+#Use these parameters for the color model
+#SIZE = (192,192)
+#COL = True
 
 #Path to the dataset
 RAW_DS_PATH = '/home/prithvi/dsets/hand_dataset/training_dataset/training_data'
