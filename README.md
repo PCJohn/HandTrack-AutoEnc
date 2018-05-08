@@ -65,6 +65,6 @@ This will load the dataset, train the model and save it in `auto.h5`.
 
 (1) Ensure images are large: The images in the dataset are all bigger than (300 x 300). However, many of them have a thick black padding, with the actual image content covering a much smaller area. I tried training with the sizes set to (64 x 64), (128 x 128) and (224 x 224). Using a large image size significantly helps the model (manually looking through the images, you can see that resizing the images to (128 x 128) reduces the hands to a few pixels in many images). I have not tried using images larger that (224 x 224).
 
-(2) Trimming the model: I am pretty sure the model size can be reduced (though training would take longer). Overall, it is a standard autoencoder. The only thing to ensure is that max pooling layers are not used in the encoder (I've used strided convolutions instead).
+(2) Trimming the model: I am pretty sure the model size can be reduced. The only thing to ensure is that max pooling layers are not used in the encoder (use strided convolutions instead).
 
 (3) Normalization: I have not used any normalization while training. Code to normalize an image can be added in line 45 in `hds.py`.
